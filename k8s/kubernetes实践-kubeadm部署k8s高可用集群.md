@@ -699,7 +699,7 @@ HA(High Avalilability)的部署有两种方式
   
   ```
 
-* **查看etcd高可用集群leader
+* **查看etcd高可用集群leader**
 
   ```sh
   [root@k8s-master ~]#  ETCDCTL_API=3 etcdctl --cacert=/etc/kubernetes/pki/etcd/ca.crt --cert=/etc/kubernetes/pki/etcd/peer.crt --key=/etc/kubernetes/pki/etcd/peer.key --write-out=table --endpoints=172.16.15.199:2379,172.16.15.201:2379,172.16.15.202:2379 endpoint status
